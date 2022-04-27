@@ -41,6 +41,14 @@ android {
         prod {
 
         }
+
+        huawei{
+
+        }
+
+        google{
+            
+        }
     }
 
     // Remove mockRelease as it's not needed.
