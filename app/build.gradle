@@ -34,21 +34,23 @@ android {
     }
 
     // If you need to add more flavors, consider using flavor dimensions.
-    flavorDimensions += "version"
+    flavorDimensions ("environment","store")
+
     productFlavors {
         mock {
+            dimension = "environment"
             applicationIdSuffix = ".mock"
         }
         prod {
-
+            dimension = "environment"
         }
 
         huawei{
-            dimension = "version"
+            dimension = "store"
         }
 
         google{
-            dimension = "version"
+            dimension = "store"
         }
     }
 

@@ -35,6 +35,7 @@ class FirstFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+        binding.textviewFirst.text = BuildConfig.FLAVOR + BuildConfig.BUILD_TYPE
     }
 
     override fun onDestroyView() {
